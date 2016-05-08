@@ -1,51 +1,43 @@
 // ================================================================
-// _baseline.scss | MIT License
-//
-// Idea taken from http://basehold.it, ported to SCSS, with added
-// options for a grid subdivision/half step.
-//
-// Add this partial to your base styles, after any variables.scss.
-// Click/tap to view baseline grid.
+// BASELINE =======================================================
 // ================================================================
 
-// ================================================================
 // Variables
-// ================================================================
 
-// Set your baseline/line-height here:
-$baseline: 1.6rem;
-
-// Main grid values:
 $baseline_div_color: rgb(0,0,0);
 $baseline_div_alpha: 0.4;
-
-// Grid Subdivision values:
 $baseline_subdiv_color: rgb(0,0,0);
 $baseline_subdiv_alpha: 0.1;
 
-
-// ================================================================
 // Baseline Grid
-// ================================================================
 
-html:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999999999999999999999999999999999; // Well...
-  pointer-events: none;
-  background: none;
+body {
+  position: relative
 }
 
-  html:active:after {
-    background: repeating-linear-gradient(180deg,
+body:after {
+  content: "";
+  z-index: 999999; // Well...
+  display: block;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background: none;
+  background-repeat: repeat;
+  background-image: repeating-linear-gradient(180deg,
     rgba($baseline_div_color,$baseline_div_alpha) 0px,
     rgba(0,0,0,0) 1px,
-    rgba(0,0,0,0) ($baseline / 2) - 0.01,
+    rgba(0,0,0,0) ($baseline / 2 - 0.15),
     rgba($baseline_subdiv_color,$baseline_subdiv_alpha) $baseline / 2,
-    rgba(0,0,0,0) ($baseline / 2) + 0.045,
+    rgba(0,0,0,0) ($baseline / 2 + 1),
     rgba(0,0,0,0) $baseline);
+}
+
+  body:active:after {
+
   }
