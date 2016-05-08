@@ -27,17 +27,16 @@ body:after {
   bottom: 0;
   left: 0;
   pointer-events: none;
-  background: none;
   background-repeat: repeat;
-  background-image: repeating-linear-gradient(180deg,
-    rgba($baseline_div_color,$baseline_div_alpha) 0px,
-    rgba(0,0,0,0) 1px,
-    rgba(0,0,0,0) ($baseline / 2 - 0.15),
-    rgba($baseline_subdiv_color,$baseline_subdiv_alpha) $baseline / 2,
-    rgba(0,0,0,0) ($baseline / 2 + 1),
-    rgba(0,0,0,0) $baseline);
+  background: none;
 }
 
   body:active:after {
-
+    background-image: repeating-linear-gradient(180deg,
+      rgba($baseline_div_color,$baseline_div_alpha) 0px,
+      rgba(0,0,0,0) 1px,
+      rgba(0,0,0,0) ($baseline / 2 - 0.15),
+      rgba($baseline_subdiv_color,$baseline_subdiv_alpha) $baseline / 2,
+      rgba(0,0,0,0) ($baseline / 2 + 1),
+      rgba(0,0,0,0) $baseline);
   }
