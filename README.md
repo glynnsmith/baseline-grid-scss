@@ -1,6 +1,6 @@
 # baseline.scss
 
-This is a super simple SCSS partial, based on [http://basehold.it](basehold.it), an overlay grid for helping achieve vertical rhythm.
+This is a super simple SCSS partial, based on [basehold.it](http://basehold.it), an overlay grid for helping achieve vertical rhythm.
 
 `@import` baseline.scss into your base stylesheet. Click-hold your page to view baseline grid.
 
@@ -8,7 +8,7 @@ Note: _Assumes you're using autoprefixing in your SCSS preprocessing pipe_
 
 ## Doesn't this already exist?
 
-Probably. I discovered this technique after using the fantastically helpful [http://basehold.it](basehold.it), but have been experiencing downtime due to their not being able to serve it 100%. I decided to put this together to help myself and any other typographers wanting to get grid-perfect vertical rhythm on their pages.
+Probably. I discovered this technique after using the fantastically helpful [basehold.it](http://basehold.it), but have been experiencing downtime due to their not being able to serve it 100%. I decided to put this together to help myself and any other typographers wanting to get grid-perfect vertical rhythm on their pages.
 
 ## Licenses
 
