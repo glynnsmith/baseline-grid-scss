@@ -2,6 +2,8 @@
 
 This is a super simple SCSS partial, based on [basehold.it](http://basehold.it), an overlay grid for helping achieve vertical rhythm.
 
+[DEMO - on CodePen](http://codepen.io/Iamglynnsmith/full/vGbJZW/)
+
 `@import` baseline.scss into your base stylesheet. Click-hold your page to view baseline grid.
 
 Note: _Assumes you're using autoprefixing in your SCSS preprocessing pipe_
